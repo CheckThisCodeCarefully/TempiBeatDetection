@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TBo-Ta-YXk">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--BPMViewController-->
+        <scene sceneID="S8Z-wF-nyC">
+            <objects>
+                <viewController id="TBo-Ta-YXk" userLabel="BPMViewController" customClass="BPMViewController" customModule="TempiBeatDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7JL-tr-VC5"/>
+                        <viewControllerLayoutGuide type="bottom" id="xD5-c4-meB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5bz-1u-uv8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="——" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="taA-7i-XKy">
+                                <rect key="frame" x="180" y="202" width="240" height="196"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="196" id="5RX-dA-Vq1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="120"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8G5-4P-PPi">
+                                <rect key="frame" x="20" y="20" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="BAl-RK-4lj"/>
+                                    <constraint firstAttribute="width" constant="110" id="Nnl-Tr-aK9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="60-120"/>
+                                <connections>
+                                    <action selector="range60Button:" destination="TBo-Ta-YXk" eventType="touchUpInside" id="PdV-G0-aeV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7X-bn-Ezp">
+                                <rect key="frame" x="470" y="20" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="WuV-Hy-hTj"/>
+                                    <constraint firstAttribute="width" constant="110" id="wic-6I-cP2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="80-160"/>
+                                <connections>
+                                    <action selector="range80Button:" destination="TBo-Ta-YXk" eventType="touchUpInside" id="N9g-aK-UEL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaU-BM-bfD">
+                                <rect key="frame" x="470" y="470" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="5Kc-E6-LIb"/>
+                                    <constraint firstAttribute="height" constant="110" id="eJr-CO-MBa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="120-240"/>
+                                <connections>
+                                    <action selector="range100Button:" destination="TBo-Ta-YXk" eventType="touchUpInside" id="nx4-Ul-TNG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8n-fg-C8w">
+                                <rect key="frame" x="20" y="470" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="Tft-vI-dno"/>
+                                    <constraint firstAttribute="height" constant="110" id="Yfp-Ck-zEj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="100-200"/>
+                                <connections>
+                                    <action selector="range120Button:" destination="TBo-Ta-YXk" eventType="touchUpInside" id="Eab-B3-UF5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="v8n-fg-C8w" secondAttribute="leading" id="CC9-rH-ah9"/>
+                            <constraint firstItem="m7X-bn-Ezp" firstAttribute="top" secondItem="7JL-tr-VC5" secondAttribute="bottom" id="CRK-9a-aWE"/>
+                            <constraint firstItem="xD5-c4-meB" firstAttribute="top" secondItem="v8n-fg-C8w" secondAttribute="bottom" constant="20" id="D7Z-IO-eHk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kaU-BM-bfD" secondAttribute="trailing" id="E2U-WX-Jqd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m7X-bn-Ezp" secondAttribute="trailing" id="R1P-Bh-bXM"/>
+                            <constraint firstItem="taA-7i-XKy" firstAttribute="centerX" secondItem="5bz-1u-uv8" secondAttribute="centerX" id="ZA6-EN-Z9B"/>
+                            <constraint firstItem="taA-7i-XKy" firstAttribute="centerY" secondItem="5bz-1u-uv8" secondAttribute="centerY" id="cGf-pa-2JW"/>
+                            <constraint firstItem="8G5-4P-PPi" firstAttribute="top" secondItem="7JL-tr-VC5" secondAttribute="bottom" id="dKZ-RT-emd"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="8G5-4P-PPi" secondAttribute="leading" id="sKQ-Li-yt1"/>
+                            <constraint firstItem="xD5-c4-meB" firstAttribute="top" secondItem="kaU-BM-bfD" secondAttribute="bottom" constant="20" id="zJG-p0-mCG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bpmLabel" destination="taA-7i-XKy" id="dx8-ct-Hak"/>
+                        <outlet property="range100Button" destination="kaU-BM-bfD" id="NPf-M8-zwA"/>
+                        <outlet property="range120Button" destination="v8n-fg-C8w" id="FpI-h5-iBH"/>
+                        <outlet property="range60Button" destination="8G5-4P-PPi" id="mGi-dc-0no"/>
+                        <outlet property="range80Button" destination="m7X-bn-Ezp" id="g3i-SA-8bV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yy1-am-apG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547" y="348"/>
+        </scene>
+    </scenes>
+</document>

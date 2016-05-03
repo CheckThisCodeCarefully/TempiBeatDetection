@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF0587141CD1827500745BF6 /* TempiBeatDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0587131CD1827500745BF6 /* TempiBeatDetector.swift */; };
+		EF0587171CD6F2BA00745BF6 /* TempiBeatDetectorValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0587161CD6F2BA00745BF6 /* TempiBeatDetectorValidation.swift */; };
+		EFE97D681CCFC8850082BAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE97D671CCFC8850082BAEC /* AppDelegate.swift */; };
+		EFE97D6A1CCFC8850082BAEC /* BPMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE97D691CCFC8850082BAEC /* BPMViewController.swift */; };
+		EFE97D6D1CCFC8850082BAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE97D6B1CCFC8850082BAEC /* Main.storyboard */; };
+		EFE97D6F1CCFC8850082BAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE97D6E1CCFC8850082BAEC /* Assets.xcassets */; };
+		EFE97D721CCFC8850082BAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE97D701CCFC8850082BAEC /* LaunchScreen.storyboard */; };
+		EFE97D7A1CCFC8FB0082BAEC /* TempiPeakDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE97D791CCFC8FB0082BAEC /* TempiPeakDetector.swift */; };
+		EFE97D7C1CCFC9050082BAEC /* TempiFFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE97D7B1CCFC9050082BAEC /* TempiFFT.swift */; };
+		EFE97D7E1CCFC90B0082BAEC /* TempiAudioInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE97D7D1CCFC90B0082BAEC /* TempiAudioInput.swift */; };
+		EFE97D801CCFC9100082BAEC /* TempiUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE97D7F1CCFC9100082BAEC /* TempiUtilities.swift */; };
+		EFF64A8A1CD90C4900EBA555 /* TempiBeatDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF64A891CD90C4900EBA555 /* TempiBeatDetectionTests.swift */; };
+		EFF64A911CD90C9B00EBA555 /* TempiBeatDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0587131CD1827500745BF6 /* TempiBeatDetector.swift */; };
+		EFF64A921CD90C9F00EBA555 /* TempiBeatDetectorValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0587161CD6F2BA00745BF6 /* TempiBeatDetectorValidation.swift */; };
+		EFF64A931CD90CA300EBA555 /* TempiPeakDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE97D791CCFC8FB0082BAEC /* TempiPeakDetector.swift */; };
+		EFF64A941CD90CA700EBA555 /* TempiFFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE97D7B1CCFC9050082BAEC /* TempiFFT.swift */; };
+		EFF64A951CD90CAF00EBA555 /* TempiUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE97D7F1CCFC9100082BAEC /* TempiUtilities.swift */; };
+		EFF64A961CD90CCA00EBA555 /* TempiAudioInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE97D7D1CCFC90B0082BAEC /* TempiAudioInput.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFF64A8C1CD90C4900EBA555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE97D5C1CCFC8840082BAEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFE97D631CCFC8840082BAEC;
+			remoteInfo = TempiBeatDetection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF0587131CD1827500745BF6 /* TempiBeatDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempiBeatDetector.swift; sourceTree = "<group>"; };
+		EF0587161CD6F2BA00745BF6 /* TempiBeatDetectorValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempiBeatDetectorValidation.swift; sourceTree = "<group>"; };
+		EFE97D641CCFC8850082BAEC /* TempiBeatDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempiBeatDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE97D671CCFC8850082BAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFE97D691CCFC8850082BAEC /* BPMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPMViewController.swift; sourceTree = "<group>"; };
+		EFE97D6C1CCFC8850082BAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFE97D6E1CCFC8850082BAEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFE97D711CCFC8850082BAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFE97D731CCFC8850082BAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE97D791CCFC8FB0082BAEC /* TempiPeakDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempiPeakDetector.swift; sourceTree = "<group>"; };
+		EFE97D7B1CCFC9050082BAEC /* TempiFFT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempiFFT.swift; sourceTree = "<group>"; };
+		EFE97D7D1CCFC90B0082BAEC /* TempiAudioInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempiAudioInput.swift; sourceTree = "<group>"; };
+		EFE97D7F1CCFC9100082BAEC /* TempiUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempiUtilities.swift; sourceTree = "<group>"; };
+		EFF64A871CD90C4900EBA555 /* TempiBeatDetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempiBeatDetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF64A891CD90C4900EBA555 /* TempiBeatDetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempiBeatDetectionTests.swift; sourceTree = "<group>"; };
+		EFF64A8B1CD90C4900EBA555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFE97D611CCFC8840082BAEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF64A841CD90C4900EBA555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFE97D5B1CCFC8840082BAEC = {
+			isa = PBXGroup;
+			children = (
+				EFE97D661CCFC8850082BAEC /* TempiBeatDetection */,
+				EFF64A881CD90C4900EBA555 /* TempiBeatDetectionTests */,
+				EFE97D651CCFC8850082BAEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFE97D651CCFC8850082BAEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFE97D641CCFC8850082BAEC /* TempiBeatDetection.app */,
+				EFF64A871CD90C4900EBA555 /* TempiBeatDetectionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFE97D661CCFC8850082BAEC /* TempiBeatDetection */ = {
+			isa = PBXGroup;
+			children = (
+				EFE97D671CCFC8850082BAEC /* AppDelegate.swift */,
+				EFE97D691CCFC8850082BAEC /* BPMViewController.swift */,
+				EF0587131CD1827500745BF6 /* TempiBeatDetector.swift */,
+				EF0587161CD6F2BA00745BF6 /* TempiBeatDetectorValidation.swift */,
+				EFE97D791CCFC8FB0082BAEC /* TempiPeakDetector.swift */,
+				EFE97D7B1CCFC9050082BAEC /* TempiFFT.swift */,
+				EFE97D7D1CCFC90B0082BAEC /* TempiAudioInput.swift */,
+				EFE97D7F1CCFC9100082BAEC /* TempiUtilities.swift */,
+				EFE97D6B1CCFC8850082BAEC /* Main.storyboard */,
+				EFE97D6E1CCFC8850082BAEC /* Assets.xcassets */,
+				EFE97D701CCFC8850082BAEC /* LaunchScreen.storyboard */,
+				EFE97D731CCFC8850082BAEC /* Info.plist */,
+			);
+			path = TempiBeatDetection;
+			sourceTree = "<group>";
+		};
+		EFF64A881CD90C4900EBA555 /* TempiBeatDetectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFF64A891CD90C4900EBA555 /* TempiBeatDetectionTests.swift */,
+				EFF64A8B1CD90C4900EBA555 /* Info.plist */,
+			);
+			path = TempiBeatDetectionTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFE97D631CCFC8840082BAEC /* TempiBeatDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFE97D761CCFC8850082BAEC /* Build configuration list for PBXNativeTarget "TempiBeatDetection" */;
+			buildPhases = (
+				EFE97D601CCFC8840082BAEC /* Sources */,
+				EFE97D611CCFC8840082BAEC /* Frameworks */,
+				EFE97D621CCFC8840082BAEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TempiBeatDetection;
+			productName = TempiBeatDetection;
+			productReference = EFE97D641CCFC8850082BAEC /* TempiBeatDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFF64A861CD90C4900EBA555 /* TempiBeatDetectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFF64A8E1CD90C4900EBA555 /* Build configuration list for PBXNativeTarget "TempiBeatDetectionTests" */;
+			buildPhases = (
+				EFF64A831CD90C4900EBA555 /* Sources */,
+				EFF64A841CD90C4900EBA555 /* Frameworks */,
+				EFF64A851CD90C4900EBA555 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFF64A8D1CD90C4900EBA555 /* PBXTargetDependency */,
+			);
+			name = TempiBeatDetectionTests;
+			productName = TempiBeatDetectionTests;
+			productReference = EFF64A871CD90C4900EBA555 /* TempiBeatDetectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFE97D5C1CCFC8840082BAEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "John Scalo";
+				TargetAttributes = {
+					EFE97D631CCFC8840082BAEC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					EFF64A861CD90C4900EBA555 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EFE97D631CCFC8840082BAEC;
+					};
+				};
+			};
+			buildConfigurationList = EFE97D5F1CCFC8840082BAEC /* Build configuration list for PBXProject "TempiBeatDetection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFE97D5B1CCFC8840082BAEC;
+			productRefGroup = EFE97D651CCFC8850082BAEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFE97D631CCFC8840082BAEC /* TempiBeatDetection */,
+				EFF64A861CD90C4900EBA555 /* TempiBeatDetectionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFE97D621CCFC8840082BAEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE97D721CCFC8850082BAEC /* LaunchScreen.storyboard in Resources */,
+				EFE97D6F1CCFC8850082BAEC /* Assets.xcassets in Resources */,
+				EFE97D6D1CCFC8850082BAEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF64A851CD90C4900EBA555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFE97D601CCFC8840082BAEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE97D7C1CCFC9050082BAEC /* TempiFFT.swift in Sources */,
+				EFE97D7A1CCFC8FB0082BAEC /* TempiPeakDetector.swift in Sources */,
+				EFE97D6A1CCFC8850082BAEC /* BPMViewController.swift in Sources */,
+				EF0587141CD1827500745BF6 /* TempiBeatDetector.swift in Sources */,
+				EF0587171CD6F2BA00745BF6 /* TempiBeatDetectorValidation.swift in Sources */,
+				EFE97D7E1CCFC90B0082BAEC /* TempiAudioInput.swift in Sources */,
+				EFE97D801CCFC9100082BAEC /* TempiUtilities.swift in Sources */,
+				EFE97D681CCFC8850082BAEC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF64A831CD90C4900EBA555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF64A931CD90CA300EBA555 /* TempiPeakDetector.swift in Sources */,
+				EFF64A8A1CD90C4900EBA555 /* TempiBeatDetectionTests.swift in Sources */,
+				EFF64A941CD90CA700EBA555 /* TempiFFT.swift in Sources */,
+				EFF64A911CD90C9B00EBA555 /* TempiBeatDetector.swift in Sources */,
+				EFF64A951CD90CAF00EBA555 /* TempiUtilities.swift in Sources */,
+				EFF64A961CD90CCA00EBA555 /* TempiAudioInput.swift in Sources */,
+				EFF64A921CD90C9F00EBA555 /* TempiBeatDetectorValidation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFF64A8D1CD90C4900EBA555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFE97D631CCFC8840082BAEC /* TempiBeatDetection */;
+			targetProxy = EFF64A8C1CD90C4900EBA555 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFE97D6B1CCFC8850082BAEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFE97D6C1CCFC8850082BAEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFE97D701CCFC8850082BAEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFE97D711CCFC8850082BAEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFE97D741CCFC8850082BAEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFE97D751CCFC8850082BAEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFE97D771CCFC8850082BAEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TempiBeatDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.scalo.TempiBeatDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EFE97D781CCFC8850082BAEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TempiBeatDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.scalo.TempiBeatDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EFF64A8F1CD90C4900EBA555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TempiBeatDetectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.scalo.TempiBeatDetectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempiBeatDetection.app/TempiBeatDetection";
+			};
+			name = Debug;
+		};
+		EFF64A901CD90C4900EBA555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TempiBeatDetectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.scalo.TempiBeatDetectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempiBeatDetection.app/TempiBeatDetection";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFE97D5F1CCFC8840082BAEC /* Build configuration list for PBXProject "TempiBeatDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE97D741CCFC8850082BAEC /* Debug */,
+				EFE97D751CCFC8850082BAEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFE97D761CCFC8850082BAEC /* Build configuration list for PBXNativeTarget "TempiBeatDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE97D771CCFC8850082BAEC /* Debug */,
+				EFE97D781CCFC8850082BAEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFF64A8E1CD90C4900EBA555 /* Build configuration list for PBXNativeTarget "TempiBeatDetectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF64A8F1CD90C4900EBA555 /* Debug */,
+				EFF64A901CD90C4900EBA555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFE97D5C1CCFC8840082BAEC /* Project object */;
+}
