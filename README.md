@@ -14,7 +14,7 @@ Tempi in its current state is "pretty good". It does very well with rock/pop/ele
 <b>Why Swift and not Objective-C?</b>
 
 
-Swift is actually an excellent choice for audio-centric projects. Apple has clearly rewritten or at least largely optimized large parts of the AVFoundation runtime for Swift. For example, while the equivalent version of this project running in Objective-C always maxes the CPU at 100%, the Swift version takes only about 14%. Additionally, Swift arrays are natively compatible with Apple's ```Accelerate.framework``` which provides massive performance gains when manipulating audio samples and FFT magnitudes. On the other hand, much of Apple's audio API is old and C-centric making it difficult to work with from Swift. I've tried to abstract that away into the ```TempiAudioInput``` class as much as possible.
+Swift is actually an excellent choice for audio-centric projects. Apple has clearly rewritten or at least largely optimized large parts of the AVFoundation runtime for Swift. For example, while the equivalent version of this project running in Objective-C always maxes the CPU at 100%, the Swift version takes only about 14%. Additionally, Swift arrays are natively compatible with Apple's ```Accelerate.framework``` which provides massive performance gains when manipulating audio samples and FFT magnitudes. On the other hand, much of Apple's audio API is old and C-like making it difficult to work with from Swift. I've tried to abstract that away into the ```TempiAudioInput``` class as much as possible.
 
 <b>Usage</b>
 
@@ -26,14 +26,14 @@ Using the ```TempiBeatDetector``` class in your project is simple and I've inclu
 
 <b>Validation</b>
 
-A robust validation system is critical to evaluating changes made to the beat detection algorithm. The project utilizes Xcode's unit testing infrastructure to perform validation, so just type Command-U to start it. The project includes sample audio files in the Test Media directory. These are typically 15-20s in length and categorized into Home, Studio, Threes, and Utility. Here are the current validation results:
+A robust validation system is critical to evaluating changes made to the beat detection algorithm. The project utilizes Xcode's unit testing infrastructure to perform validation, so just type Command-U to start it. The project includes sample audio files in the 'Test Media' directory which are typically 15-20s in length and categorized into Home, Studio, Threes, and Utility. Here are the current validation results:
 
+- Home set: 54.1%
 - Studio set: 69.7%
 - Threes set: 36.6%
-- Home set: 54.1%
 - Utility set: 100%
 
-The beat detector supports the writing out of plot data which can be really useful when trying to troubleshoot problems or just to understand how it works. When the ```savePlotData``` property is set, data files for each test are saved to the 'Peak detection plots' directory. The plotData file contains time stamps and magnitudes while the plotMarkers file contains time stamps and a '1' when a peak was detected.
+While validating, the beat detector can write out plot data which can be really useful when trying to troubleshoot problems or just to understand how it works. When the ```savePlotData``` property is set, data files for each test are saved to the 'Peak detection plots' directory. The plotData file contains time stamps and magnitudes while the plotMarkers file contains time stamps and a marker for each detected peak.
 
 I use the free Mac app [Abscissa](http://rbruehl.macbay.de) to visualize the plots. E.g.:
 
@@ -45,7 +45,7 @@ I use the free Mac app [Abscissa](http://rbruehl.macbay.de) to visualize the plo
 - <b>Accuracy improvements!</b>
  - Try using a convolution filter
  - Neural networks (I did a lot of work in this area already with mixed results. Email me for more info.)
- - Work on 3/4
+ - Work on 3/4, 6/8, etc
 - Add support for analyzing arbitrary streams of audio samples
 - More tests
 - Evaluate (and improve, if necessary) impact on battery life
